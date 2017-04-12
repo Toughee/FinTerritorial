@@ -1,0 +1,27 @@
+
+/*
+========	Style css	========
+*/
+
+h1 {
+	font-family: comic sans;
+	font-size: 500px;
+}
+
+
+p {
+
+}
+
+
+/*
+========	Style css	========
+*/
+
+
+body {
+	background-color: white;
+	background: -webkit-radial-gradient{circle, #FFFEFE, #DDFEFF};
+  	background: -moz-radial-gradient(circle, #FFFEFE, #DDFEFF);
+  	background: radial-gradient(to right, #FFFEFE, #DDFEFF);
+}
