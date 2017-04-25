@@ -1,46 +1,36 @@
-
 /*
 ========	Style css	========
 */
-
-
 /*
 ========	Font	========
 */
 
-
-
-h1,
-p {
-	font-family: Verano;
-	font-size: 50px;
-	padding: 200px 200px 200px 475px;
+h1 {
+    font-family: 'Grand Hotel';
+    font-size: 50px;
 }
-
-
- {
-
+h2 {} p {
+    font-family: Verano;
+    font-size: 35px;
 }
-
-
+{}
 /*
 ========  Background	========
 */
 
-
-body {
-	background: rgba(250,239,237,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(250,239,237,1) 0%, rgba(250,239,237,1) 16%, rgba(164,207,235,1) 97%, rgba(164,207,235,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(250,239,237,1)), color-stop(16%, rgba(250,239,237,1)), color-stop(97%, rgba(164,207,235,1)), color-stop(100%, rgba(164,207,235,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(250,239,237,1) 0%, rgba(250,239,237,1) 16%, rgba(164,207,235,1) 97%, rgba(164,207,235,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(250,239,237,1) 0%, rgba(250,239,237,1) 16%, rgba(164,207,235,1) 97%, rgba(164,207,235,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(250,239,237,1) 0%, rgba(250,239,237,1) 16%, rgba(164,207,235,1) 97%, rgba(164,207,235,1) 100%);
-background: radial-gradient(ellipse at center, rgba(250,239,237,1) 0%, rgba(250,239,237,1) 16%, rgba(164,207,235,1) 97%, rgba(164,207,235,1) 100%);
+.contr {
+    background: rgba(250, 239, 237, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(250, 239, 237, 1)), color-stop(16%, rgba(250, 239, 237, 1)), color-stop(97%, rgba(164, 207, 235, 1)), color-stop(100%, rgba(164, 207, 235, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
+    padding: 170px 175px 165px 275px;
 }
-
 button {
-	border-radius: 200px 0px 0px 200px;
-	-moz-border-radius: 200px 0px 0px 200px;
-	-webkit-border-radius: 200px 0px 0px 200px;
-	border: 2px solid #000000;
+    border-radius: 200px 0px 0px 200px;
+    -moz-border-radius: 200px 0px 0px 200px;
+    -webkit-border-radius: 200px 0px 0px 200px;
+    border: 2px solid #000000;
 }
