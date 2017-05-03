@@ -34,3 +34,8 @@ button {
     -webkit-border-radius: 200px 0px 0px 200px;
     border: 2px solid #000000;
 }
+
+footer { 
+    text-align: center;
+    color: black;
+}
