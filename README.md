@@ -1,8 +1,8 @@
-## Open Data Project
+# US_Financial
 
-Open data project for showing ....
+Open data project for showing financial information on a chosen US territory
 
-### What it can show you
+## What it can show you
 
 Shows information on how much (x) is in your state or city.
 
@@ -10,7 +10,7 @@ Shows information on how much (x) is in your state or city.
 
 ### Export options
 
-- 
-
+- .png
+- .jpg
 
 
