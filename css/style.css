@@ -6,7 +6,7 @@
 */
 
 h1 {
-    font-family: 'Grand Hotel';
+    font-family: 'Fjalla One', sans-serif;
     font-size: 50px;
 }
 h2,
@@ -14,7 +14,7 @@ p {
     font-family: Verano;
     font-size: 35px;
 }
-{}
+
 /*
 ========  Background	========
 */
@@ -22,16 +22,15 @@ p {
 .contr {
     position: fixed;
     display: block;
-    top: 20px;
-    left: 300px;
+    top: 30px;
+    left: 250px;
     bottom: 0;
-    max-height: 500px;
-    max-width: 700px;
-    padding: 170px 250px 0px 250px;  
+    height: 400px;
+    width: 400px;
+    padding: 100px 250px 50px 250px;  
     border: 5px solid #FFFFFF;
     background: white;
 }
-
 body {
     background: -moz-radial-gradient(center, ellipse cover, rgba(250, 239, 237, 1) 0%, rgba(250, 239, 237, 1) 16%, rgba(164, 207, 235, 1) 97%, rgba(164, 207, 235, 1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(250, 239, 237, 1)), color-stop(16%, rgba(250, 239, 237, 1)), color-stop(97%, rgba(164, 207, 235, 1)), color-stop(100%, rgba(164, 207, 235, 1)));
@@ -42,17 +41,3 @@ body {
     /*    
     */
 }
-/*
-button {
-    border-radius: 200px 0px 0px 200px;
-    -moz-border-radius: 200px 0px 0px 200px;
-    -webkit-border-radius: 200px 0px 0px 200px;
-    border: 2px solid #000000;
-}
-
-footer { 
-    text-align: center;
-    color: black;
-}
-*/
-
