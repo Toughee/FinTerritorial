@@ -1,33 +1,16 @@
-## Welcome to GitHub Pages
+# US_Financial
 
-You can use the [editor on GitHub](https://github.com/Toughee/opendataproject1/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Open data project for showing financial information on a chosen US territory
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## What it can show you
 
-### Markdown
+Shows information on how much (x) is in your state or city.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![Image](src)
 
-```markdown
-Syntax highlighted code block
+### Export options
 
-# Header 1
-## Header 2
-### Header 3
+- .png
+- .jpg
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
