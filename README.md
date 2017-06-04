@@ -1,4 +1,4 @@
-# US_Financial
+# FinTerritory
 
 Open data project for showing financial information on a chosen US territory
 
