@@ -1,98 +1,101 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang ="en">
 <head>
-    <title>FinTerritorial</title>
     <meta charset="utf-8">
+    <title>Spigot Dig</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-    </style>
 
 </head>
-
 <body>
+<header>
+<img src = "img/icon.svg" alt="logo.png" width="50" height="50" align="center">
+<h1>Spigot Dig</h1>
 
-    <div class="contr">
-        <h1>
-        FinTerritorial
-        </h1>
-        <h2>Gives you an analysis of different financial data for different states.</h2>
-        <ul>
-            GDP
-            MAIN EXPORT
-            MAIN PRODUCT
-        </ul>
+</header>
 
-        <p>
-            Now, choose your state!
-        </p>
-        <form action="/data.php">
-            <fieldset>
-                <select>
-                    <option>U.S States</option>
-                    <!-- 50 US States -->
-                    <option value="">AL </option>
-                    <option value="">AK </option>
-                    <option value="">AZ </option>
-                    <option value="">AR </option>
-                    <option value="">CA </option>
-                    <option value="">CO </option>
-                    <option value="">CT </option>
-                    <option value="">DE </option>
-                    <option value="">FL </option>
-                    <option value="">GA </option>
-                    <option value="">HI </option>
-                    <option value="">ID </option>
-                    <option value="">IL </option>
-                    <option value="">IN </option>
-                    <option value="">IA </option>
-                    <option value="">KS </option>
-                    <option value="">KY </option>
-                    <option value="">LA </option>
-                    <option value="">ME </option>
-                    <option value="">MD </option>
-                    <option value="">MA </option>
-                    <option value="">MI </option>
-                    <option value="">MN </option>
-                    <option value="">MS </option>
-                    <option value="">MO </option>
-                    <option value="">MT </option>
-                    <option value="">NE </option>
-                    <option value="">NV </option>
-                    <option value="">NH </option>
-                    <option value="">NJ </option>
-                    <option value="">NM </option>
-                    <option value="">NY </option>
-                    <option value="">NC </option>
-                    <option value="">ND </option>
-                    <option value="">OH </option>
-                    <option value="">OK </option>
-                    <option value="">OR </option>
-                    <option value="">PA </option>
-                    <option value="">RI </option>
-                    <option value="">SC </option>
-                    <option value="">SD </option>
-                    <option value="">TN </option>
-                    <option value="">TX </option>
-                    <option value="">UT </option>
-                    <option value="">VT </option>
-                    <option value="">VA </option>
-                    <option value="">WA </option>
-                    <option value="">WV </option>
-                    <option value="">WI </option>
-                    <option value="">WY </option>
-                    <!-- US Territories-->
-                    <option value="0">-U.S Territories-</option>
-                    <option value="">GU </option>
-                    <option value="">PR </option>
-                    <option value="">VI </option>
-                </select>
-                <input type="submit" value="Submit">
-            </fieldset>
-        </form>
-    </div>
+
+<div id ="square">
+    <section>
+
+        <h2>Javascript app which provides a summary for financial data in different states inside North America</h2>
+        <noscript>
+            <h2>This app requires javascript to be used. Please enable it to continue</h2> 
+        </noscript>
+
+
+
+    <form name="Spigot">
+        <select name="Dig" onchange="showData()">
+
+            <option>Select a State:</option>
+            
+            <option id="Ambulatory health care services"  label="Alabama" value="$ 7.4">Southeast</option>
+            <option id="Oil and gas extraction" label="Alaska"value="$8.7">Far West</option>
+            <option id="Ambulatory health care services" label="Arizona"value="$11.8">Southwest</option>
+            <option id="Broadcasting and telecommunications" label="Arkansas"value="$6.9">Southeast</option>
+            <option id="Computer and electronic products manufacturing" label="California"value="$74.4">Far West</option>
+            <option id="Broadcasting and telecommunications" label="Colorado"value="$13.8">New England</option>
+            <option id=" Insurance carriers and related activities" label="Connecticut"value="$17.3">Southeast</option>
+            <option id="Federal Reserve banks, credit intermediation, and related services" label="Delaware"value="$7.9">Mideast</option><!--
+            <option id="Manufacturing" label="District of Columbia"value="2.7%">Southwest</option>-->
+            <option id=" Ambulatory health care services" label="Florida"value="35.5">Southeast</option>
+
+            <option id="Federal Reserve banks, credit intermediation, and related services" label="Georgia"value="18.4">Southeast</option>
+            <option id="Tourism and Acommodation" label="Hawaii"value="$3.8">Southwest</option>
+            <option id="Computer and electronic products manufacturing" label="Idaho"value="$3.1">Southwest</option>
+            <option id="Insurance carriers and related activities" label="Illinois"value="$25.9">Great Lakes</option>
+            <option id="Chemical products manufacturing" label="Indiana"value="$23.8">Great Lakes</option>
+            <option id="Insurance carriers and related activities" label="Iowa"value="11.0">Plains</option>
+            <option id="Hospital, Nursing and Residential care facilities" label="Kansas"value="$4.6">Southwest</option>
+            <option id="Manufacturing" label="Kentucky"value="$7.9">Southeast</option>
+            <option id="Chemical products manufacturing" label="Louisiana"value="$15.4">Southwest</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Maine"value="$3.3">New England</option>
+            <option id="Ambulatory health care services" label="Maryland"value="11.2">Southwest</option>
+
+            <option id="Hospital, Nursing and Residential care facilities" label="Massachusetts"value="$19.4">New England</option>
+            <option id="Manufacturing" label="Michigan"value="$42.4">Great Lakes</option>
+            <option id="Ambulatory health care services" label="Minnesota"value="$11.8">Plains</option>
+            <option id="Ambulatory health care services" label="Mississippi"value="$3.9">Southeast</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Missouri"value="$10.9">Plains</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Montana"value="$1.9">Southeast</option>
+            <option id="Insurance carriers and related activities" label="Nebraska"value="$5.5">Plains</option>
+            <option id="Tourism and Acommodation" label="Nevada"value="$13.0">Southwest</option>
+            <option id="Insurance carriers and related activities" label="New Hampshire"value="$2.9">New England</option>
+            <option id="Ambulatory health care services" label="New Jersey"value="$19.3">Mideast</option>
+            <option id="Oil and gas extraction" label="New Mexico"value="$3.7">Southwest</option>
+
+            <option id=" Federal Reserve banks, credit intermediation, and related services" label="New York"value="$99.1">Mideast</option>
+            <option id=" Federal Reserve banks, credit intermediation, and related services" label="North Carolina"value="$26.4">Plains</option>
+            <option id="Mining" label="North Dakota"value="$3.5">Southeast</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Ohio"value="$22.3">Great Lakes</option>
+            <option id="Oil and gas extraction" label="Oklahoma"value="$13.7">Southwest</option>
+            <option id="Computer and electronic products manufacturing" label="Oregon"value="$41.3">Far West</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Pennsylvania"value="$28.0">Mideast</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Rhode Island"value="$2.8">New England</option>
+            <option id="Administrative and support services" label="South Carolina"value="$6.5">Southeast</option>
+            <option id="Federal Reserve banks, credit intermediation, and related services" label="South Dakota"value="$5.0">Plains</option>
+
+            <option id="Ambulatory health care services" label="Tennesse"value="$13.1">Southeast</option>
+            <option id="Oil and gas extraction" label="Texas"value="$123.9">Southwest</option>
+            <option id="Federal Reserve banks, credit intermediation, and related services" label="Utah"value="$6.8">Rocky Mountain</option>
+            <option id="Hospitals, Nursing and Residential care facilities" label="Vermont"value="$1.2">New England</option>
+            <option id="Food, beverage and tobacco products manufacturing" label="Virginia"value="$15.7">Southeast</option>
+            <option id="Publishing" label="Washington"value="$30.2">Far West</option>
+            <option id="Mining" label="West Virginia"value="$6.0">Southeast</option>
+            <option id=" Insurance carriers and related activities" label="Wisconsin"value="$12.2">Great Lakes</option>
+            <option id="Mining" label="Wyoming"value="$4.9">Rocky Mountain</option>
+
+        </select>
+    </form>
+
+<citation>
+    <p id="GDP">&nbsp;</p>
+</citation>
+
+</section>
+</div>
+
+    <script src ="js/datadisplay.js">
+     </script>
 </body>
-
 </html>
