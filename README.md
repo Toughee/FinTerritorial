@@ -10,11 +10,9 @@ Shows information for different states inside the U.S
 2. Region it belongs to
 3. Main industry inside state
 
-![Image](src)
-
 ### Source
-
+  ```
 U.S. Bureau of Economic Analysis
 https://www.bea.gov/
-
+  ```
 
