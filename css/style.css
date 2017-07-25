@@ -8,17 +8,16 @@ body {
     background: #fcfcfc;
 }
 section {
-    margin: 100px 400px 0px 380px;
+    margin: 70px 400px 0px 380px;
     padding: 40px 10px 20px 10px;
-    width: 35%;
-    height: 5%;
+    width: 40%;
+    height: 10%;
     border: 5px solid #000000;
 }
 form {
     padding: 0px 175px 0px 175px;
     position: relative;
 }
-
 img {
     margin: 10px 0px 0px 0px;
     position: relative;
@@ -27,8 +26,9 @@ i {
     left: 45%;
     position: relative;
 }
-option {
-    margin-left: 100px;
+select {
+    left: 15%;
+    position: relative;
 }
 
 /*
@@ -40,7 +40,8 @@ h1 {
     margin: -45px 330px 0px 60px;
     font-family: 'Russo One', sans-serif;
 }
-h2 {
+h2, 
+h3 {
     font-size: 1.6vw;
     margin: 0px 100px 30px 100px;
     text-align: center;
@@ -48,7 +49,7 @@ h2 {
 }
 p {
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     font-family: 'Lato', sans-serif;
 }
 
