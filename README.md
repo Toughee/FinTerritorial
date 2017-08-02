@@ -1,6 +1,6 @@
 # Spigot Dig
 
-Javascript application showing a summary of the financial information on a chosen US territory
+Javascript application showing a summary of the financial information on a chosen US territory. Works best in a desktop environment.
 
 ## Information shown
 
