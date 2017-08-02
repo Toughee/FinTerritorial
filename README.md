@@ -1,6 +1,6 @@
 # Spigot Dig
 
-Open data project for showing financial information on a chosen US territory
+Javascript application showing a summary of the financial information on a chosen US territory
 
 ## Information shown
 
@@ -9,6 +9,9 @@ Open data project for showing financial information on a chosen US territory
 
 ### Source
   ```
+Bureau of Labor Statistics
+https://www.bls.gov/
+  
 U.S. Bureau of Economic Analysis
 https://www.bea.gov/
   ```
