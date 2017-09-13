@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Orbitron|Russo+One');
 
 /*
-=============
-Body and form
-=============
+===============================================
+                Body and form
+===============================================
 */
 body {
     background: #F3F3F3;
@@ -33,9 +33,9 @@ select {
 }
 
 /*
-===========
-Font
-===========
+=========================================
+                    Font
+=========================================
 */
 h1 {
     margin: -45px 330px 0px 60px;
@@ -53,9 +53,9 @@ h3 {
 p {
     text-align: center;
     font-size: 1rem;
-    margin: 15px 10px 5px 0px; 
+    margin: 0px 10px 5px 0px; 
     font-family: 'Lato', sans-serif;
-    padding: 50px 50px 0px 50px;
+    padding: 0px 50px 0px 50px;
 }
 h2, 
 h3,
@@ -65,4 +65,7 @@ p {
 #square {
     background: #262626;
     margin: 70px 400px 0px 380px;
+    -webkit-box-shadow: 34px 29px 33px -9px rgba(0,0,0,0.53);
+    -moz-box-shadow: 34px 29px 33px -9px rgba(0,0,0,0.53);
+    box-shadow: 34px 29px 33px -9px rgba(0,0,0,0.53);
 }
