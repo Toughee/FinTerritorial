@@ -3,38 +3,70 @@ import socket
 if socket.gethostname()=="COMPSYSTEM": 
     from local_settings import *
 
+##########################################################################################
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+##########################################################################################
 
 #SECRET_KEY = '=(n^v8a8ni%ht_w=uc=b*0hlf8v^0)4tox^o_ovuhmq4vl7%0a'
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '=n^v8a8ni%ht_w=uc=b*0hlf8v^0)4tox^o_ovuhmq4vl7%0a')
 
-#DEBUG = True
+##########################################################################################
+
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
-#Last security settings that need to be updated 
+##########################################################################################
 
-    #SECURE_CONTENT_TYPE_NOSNIFF = True
 
-    #SESSION_COOKIE_SECURE = True
+#### Security Settings ####
 
-    #SECURE_BROWSER_XSS_FILTER = True
+##########################################################################################
 
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+##########################################################################################
+
+SESSION_COOKIE_SECURE = True
+
+##########################################################################################
+
+SECURE_BROWSER_XSS_FILTER = True
+
+##########################################################################################
+
+#sends it into a https connection. Making the app incompatible 
     #SECURE_SSL_REDIRECT = True
 
+CSRF_COOKIE_SECURE = True
 
-    #CSRF_COOKIE_SECURE = True
+##########################################################################################
 
-    #CSRF_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = True
 
-    #X_FRAME_OPTIONS = 'DENY'
+##########################################################################################
 
-# End of last security settings
+X_FRAME_OPTIONS = 'DENY'
+
+##########################################################################################
+
+SECURE_HSTS_SECONDS = 31536000
+
+##########################################################################################
+
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
+##########################################################################################
+
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.SpigotDig.com']
 
 ADMINS  = [( 'T.Jim', 'Marotjimenez@gmail.com')]
 
-# Application definitions
+
+###########################################################################################
+
+#### Application definitions ####
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -46,6 +78,8 @@ INSTALLED_APPS = [
     'stateselect',
 ]
 
+##########################################################################################
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -56,7 +90,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+##########################################################################################
+
 ROOT_URLCONF = 'SpigotDig.urls'
+
+##########################################################################################
 
 TEMPLATES = [
     {
@@ -74,7 +112,12 @@ TEMPLATES = [
     },
 ]
 
+##########################################################################################
+
 WSGI_APPLICATION = 'SpigotDig.wsgi.application'
+
+##########################################################################################
+
 
 DATABASES = {
     'default': {
@@ -82,6 +125,8 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+##########################################################################################
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -98,29 +143,53 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+##########################################################################################
+
 LANGUAGE_CODE = 'en-us'
+
+##########################################################################################
 
 TIME_ZONE = 'UTC'
 
+##########################################################################################
+
 USE_I18N = True
+
+##########################################################################################
 
 USE_L10N = True
 
+##########################################################################################
+
 USE_TZ = True
+
+##########################################################################################
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+##########################################################################################
+
 MEDIA_URL = '/media/'
+
+##########################################################################################
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'stateselect', 'static')
 
+##########################################################################################
+
 STATIC_URL = '/static/'
+
+##########################################################################################
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
+##########################################################################################
+
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 )
+
+##########################################################################################
