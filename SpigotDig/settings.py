@@ -9,17 +9,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ##########################################################################################
 
-#SECRET_KEY = '=(n^v8a8ni%ht_w=uc=b*0hlf8v^0)4tox^o_ovuhmq4vl7%0a'
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '=n^v8a8ni%ht_w=uc=b*0hlf8v^0)4tox^o_ovuhmq4vl7%0a')
+with open('etc/secret_key.txt') as f:
+    SECRET_KEY = f.read().strip() 
 
 ##########################################################################################
 
-DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
+# DEBUG = bool( os.environ.get('DJANGO_DEBUG', True))
 
 ##########################################################################################
 
 
-#### Security Settings ####
+                            #### Security Settings ####
 
 ##########################################################################################
 
@@ -66,7 +66,9 @@ ADMINS  = [( 'T.Jim', 'Marotjimenez@gmail.com')]
 
 ###########################################################################################
 
-#### Application definitions ####
+                            #### Application definitions ####
+
+##########################################################################################
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -75,6 +77,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+#    'django_hosts',
+
     'stateselect',
 ]
 
@@ -82,6 +87,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -95,6 +101,15 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'SpigotDig.urls'
 
 ##########################################################################################
+
+###Currently not working
+#server = { 
+#    listen 80 default;
+#    return 444;
+#}
+
+##########################################################################################
+
 
 TEMPLATES = [
     {
@@ -115,6 +130,18 @@ TEMPLATES = [
 ##########################################################################################
 
 WSGI_APPLICATION = 'SpigotDig.wsgi.application'
+
+##########################################################################################
+
+#DEFAULT_REDIRECT_URL = 'http://www.spigotdig.com:8000'
+
+##########################################################################################
+
+#PARENT_HOST = "spigotdig.com:8000"
+
+##########################################################################################
+
+#DEFAULT_HOST = 'www'
 
 ##########################################################################################
 
@@ -165,6 +192,10 @@ USE_TZ = True
 
 ##########################################################################################
 
+                                #### File settings ####
+
+##########################################################################################
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 ##########################################################################################
@@ -193,3 +224,7 @@ STATICFILES_FINDERS = (
 )
 
 ##########################################################################################
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)

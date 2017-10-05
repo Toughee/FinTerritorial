@@ -1,0 +1,1 @@
+web: gunicorn spigotdig.wsgi --log-file -
