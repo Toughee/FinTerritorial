@@ -90,9 +90,10 @@ body {
     color: white;
 }
 
+form,
+select,
 option {
     color: #000000;
-    font-family: 'Impact';
 }
 
 /* ==============
@@ -194,7 +195,9 @@ h1 {
     color: #FFFFFF;
     font-family: 'Orbitron', sans-serif;
 }
-
+i {
+    padding: 8px;
+}
 
 
 
