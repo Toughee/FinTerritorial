@@ -1,4 +1,4 @@
-# Spigot Dig - Ver 1.2
+# Spigot Dig - Ver 1.3
 
 Django application showing a summary of the financial information on a chosen US territory. 
 
@@ -7,20 +7,17 @@ Django application showing a summary of the financial information on a chosen US
 1. Gross domestic produce
 2. Main industry inside state
 
-### What is it for? 
+### Why was this app made? 
 
-
-
-### Why was this made?
-
-Studying financial data
+I created this app to give every person factual financial data for any state they wish to search.
 
 ### Tools used
 
 * Django
 * Javascript
 * HTML5
-* Initializer
+* Initialzer
+* Font awesome icons
 
 ### Sources
 
@@ -34,9 +31,18 @@ Studying financial data
 
 - [ ] Finish debugging the web app
 - [ ] Set up the Heroku environment
-- [ ] Finish the Python dictionary for state data
 
 
 ### Future data 
 
-- Region state belongs to
+- Region that every state belongs to
+- Icon support for every state and industry
+
+#### Long term update goal for app:
+
+Have open data available for every:
+
+- City
+- State
+- Nation
+- Continent

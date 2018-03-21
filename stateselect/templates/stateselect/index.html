@@ -7,14 +7,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SpigotDig</title>
+    <title>GDPdig</title>
 
     <!--<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">-->
     <link rel="stylesheet" href="{% static 'normalize.min.css' %}">
     <link rel="stylesheet" href="{% static 'main.css' %}">
+    <!--CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicons/apple-touch-icon.png' %}">
@@ -44,7 +43,7 @@
                         <div id="square">
         <section>
 
-            <h2>Financial data app that provides a quick summary of financial data for different states inside the U.S</h2>
+            <h2>Financial app that provides data for different states in North America</h2>
 
             <h3>Select a state from below</h3>
             <noscript>
@@ -54,71 +53,68 @@
             <form name="Spigot">
                 <select name="Dig" onchange="showData()">
                     <option label="">Choose a state</option>
-                    <option id="Ambulatory health care services" value="$ 7.4">Alabama</option>
-                    <option id="Oil and gas extraction" value="$8.7">Alaska</option>
-                    <option id="Ambulatory health care services" value="$11.8">Arizona</option>
-                    <option id="Broadcasting and telecommunications" value="$6.9">Arkansas</option>
-                    <option id="Computer and electronic products manufacturing" value="$74.4">California</option>
-                    <option id="Broadcasting and telecommunications" value="$13.8">Colorado</option>
-                    <option id=" Insurance carriers and related activities" value="$17.3">Connecticut</option>
-                    <option id="Federal Reserve banks, credit intermediation, and related services" value="$7.9">Delaware</option>
-                    <option id=" Ambulatory health care services" value="$35.5">Florida</option>
+                    <option id="Ambulatory health care services" value=" 7.4"> <i class="fa fa-ambulance" style="font-size:40px;color:white"></i>Alabama</option>
+                    <option id="Oil and gas extraction" value="8.7">Alaska</option>
+                    <option id="Ambulatory health care services" value="11.8">Arizona</option>
+                    <option id="Broadcasting and telecommunications" value="6.9">Arkansas</option>
+                    <option id="Computer and electronic products manufacturing" value="74.4">California</option>
+                    <option id="Broadcasting and telecommunications" value="13.8">Colorado</option>
+                    <option id=" Insurance carriers and related activities" value="17.3">Connecticut</option>
+                    <option id="Federal Reserve banks, credit intermediation, and related services" value="7.9">Delaware</option>
+                    <option id=" Ambulatory health care services" value="35.5">Florida</option>
 
-                    <option id="Federal Reserve banks, credit intermediation, and related services" value="$18.4">Georgia</option>
-                    <option id="Tourism and Acommodation" value="$3.8">Hawaii</option>
-                    <option id="Computer and electronic products manufacturing" value="$3.1">Idaho</option>
-                    <option id="Insurance carriers and related activities" value="$25.9">Illinois</option>
-                    <option id="Chemical products manufacturing" value="$23.8">Indiana</option>
+                    <option id="Federal Reserve banks, credit intermediation, and related services" value="18.4">Georgia</option>
+                    <option id="Tourism and Acommodation" value="3.8">Hawaii</option>
+                    <option id="Computer and electronic products manufacturing" value="3.1">Idaho</option>
+                    <option id="Insurance carriers and related activities" value="25.9">Illinois</option>
+                    <option id="Chemical products manufacturing" value="23.8">Indiana</option>
                     <option id="Insurance carriers and related activities" value="11.0">Iowa</option>
-                    <option id="Hospital, Nursing and Residential care facilities" value="$4.6">Kansas</option>
-                    <option id="Manufacturing" value="$7.9">Kentucky</option>
-                    <option id="Chemical products manufacturing" value="$15.4">Louisiana</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$3.3">Maine</option>
-                    <option id="Ambulatory health care services" value="$11.2">Maryland</option>
+                    <option id="Hospital, Nursing and Residential care facilities" value="4.6">Kansas</option>
+                    <option id="Manufacturing" value="7.9">Kentucky</option>
+                    <option id="Chemical products manufacturing" value="15.4">Louisiana</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="3.3">Maine</option>
+                    <option id="Ambulatory health care services" value="11.2">Maryland</option>
 
-                    <option id="Hospital, Nursing and Residential care facilities" value="$19.4">Massachusetts</option>
-                    <option id="Manufacturing" value="$42.4">Michigan</option>
-                    <option id="Ambulatory health care services" value="$11.8">Minnesota</option>
-                    <option id="Ambulatory health care services" value="$3.9">Mississippi</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$10.9">Missouri</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$1.9">Montana</option>
-                    <option id="Insurance carriers and related activities" value="$5.5">Nebraska</option>
-                    <option id="Tourism and Acommodation" value="$13.0">Nevada</option>
-                    <option id="Insurance carriers and related activities" value="$2.9">New Hampshire</option>
-                    <option id="Ambulatory health care services" value="$19.3">New Jersey</option>
-                    <option id="Oil and gas extraction" value="$3.7">New Mexico</option>
-                    <option id=" Federal Reserve banks, credit intermediation, and related services" value="$99.1">New York</option>
-                    <option id=" Federal Reserve banks, credit intermediation, and related services" value="$26.4">North Carolina</option>
-                    <option id="Mining" value="$3.5">North Dakota</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$22.3">Ohio</option>
-                    <option id="Oil and gas extraction" value="$13.7">Oklahoma</option>
-                    <option id="Computer and electronic products manufacturing" value="$41.3">Oregon</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$28.0">Pennsylvania</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$2.8">Rhode Island</option>
-                    <option id="Administrative and support services" value="$6.5">South Carolina</option>
-                    <option id="Federal Reserve banks, credit intermediation, and related services" value="$5.0">South Dakota</option>
+                    <option id="Hospital, Nursing and Residential care facilities" value="19.4">Massachusetts</option>
+                    <option id="Manufacturing" value="42.4">Michigan</option>
+                    <option id="Ambulatory health care services" value="11.8">Minnesota</option>
+                    <option id="Ambulatory health care services" value="3.9">Mississippi</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="10.9">Missouri</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="1.9">Montana</option>
+                    <option id="Insurance carriers and related activities" value="5.5">Nebraska</option>
+                    <option id="Tourism and Acommodation" value="13.0">Nevada</option>
+                    <option id="Insurance carriers and related activities" value="2.9">New Hampshire</option>
+                    <option id="Ambulatory health care services" value="19.3">New Jersey</option>
+                    <option id="Oil and gas extraction" value="3.7">New Mexico</option>
+                    <option id=" Federal Reserve banks, credit intermediation, and related services" value="99.1">New York</option>
+                    <option id=" Federal Reserve banks, credit intermediation, and related services" value="26.4">North Carolina</option>
+                    <option id="Mining" value="3.5">North Dakota</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="22.3">Ohio</option>
+                    <option id="Oil and gas extraction" value="13.7">Oklahoma</option>
+                    <option id="Computer and electronic products manufacturing" value="41.3">Oregon</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="28.0">Pennsylvania</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="2.8">Rhode Island</option>
+                    <option id="Administrative and support services" value="6.5">South Carolina</option>
+                    <option id="Federal Reserve banks, credit intermediation, and related services" value="5.0">South Dakota</option>
 
-                    <option id="Ambulatory health care services" value="$13.1">Tennesse</option>
-                    <option id="Oil and gas extraction" value="$123.9">Texas</option>
-                    <option id="Federal Reserve banks, credit intermediation, and related services" value="$6.8">Utah</option>
-                    <option id="Hospitals, Nursing and Residential care facilities" value="$1.2">Vermont</option>
-                    <option id="Food, beverage and tobacco products manufacturing" value="$15.7">Virginia</option>
-                    <option id="Publishing" value="$30.2">Washington</option>
-                    <option id="Mining" value="$6.0">West Virginia</option>
-                    <option id=" Insurance carriers and related activities" value="$12.2">Wisconsin</option>
-                    <option id="Mining" value="$4.9">Wyoming</option>
+                    <option id="Ambulatory health care services" value="13.1">Tennesse</option>
+                    <option id="Oil and gas extraction" value="123.9">Texas</option>
+                    <option id="Federal Reserve banks, credit intermediation, and related services" value="6.8">Utah</option>
+                    <option id="Hospitals, Nursing and Residential care facilities" value="1.2">Vermont</option>
+                    <option id="Food, beverage and tobacco products manufacturing" value="15.7">Virginia</option>
+                    <option id="Publishing" value="30.2">Washington</option>
+                    <option id="Mining" value="6.0">West Virginia</option>
+                    <option id=" Insurance carriers and related activities" value="12.2">Wisconsin</option>
+                    <option id="Mining" value="4.9">Wyoming</option>
 
                 </select>
             </form>
 
             <citation>
                 <p id="GDP"></p>
+
             </citation>
-            <!--
-            <a href="https://github.com/Toughee/SpigotDig">
-                <i class="fa fa-github-square" style="font-size:35px;color:white"></i>
-            </a>
-            -->
+
         </section>
     </div>
                 </aside>
@@ -129,20 +125,7 @@
 
         <!--<div class="footer-container">-->
             <footer>
-                <!--<img src = "{%static 'img/icon.png' %}" width="5px" height="5px;">-->
-                <h1 class="mainer">SpigotDig</h1>
-                <!--
-                <h3>About</h3>
-
-                <h3>Github</h3>
-                --><!--
-                <<nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>-->
+                <h1 class="mainer">GDPdig</h1>
             </footer>
         <!--</div>-->
 
@@ -155,16 +138,7 @@
         <script src="{% static 'datadisplay.js' %}"></script>
 
          <script src="{% static 'datadisplay.js' %}"></script>
-<!--
-         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
--->
+
 </body>
 
 </html>
