@@ -1,15 +1,15 @@
-# Spigot Dig - Ver 1.3
+# GDPdig - Ver 1.3.1
 
-Django application showing a summary of the financial information on a chosen US territory. 
+Django application showing a summary of the financial information on a chosen territory inside North America. 
 
 ## Information shown
 
 1. Gross domestic produce
 2. Main industry inside state
 
-### Why was this app made? 
+## Why was this app made? 
 
-I created this app to give every person factual financial data for any state they wish to search.
+This app is made with the goal of giving quick, financial data to anyone who needs it. 
 
 ### Tools used
 
@@ -33,16 +33,25 @@ I created this app to give every person factual financial data for any state the
 - [ ] Set up the Heroku environment
 
 
+## Installation 
+
+  ```
+1. Git clone https://github.com/Toughee/SpigotDig.git
+2. Change directory to project folder
+3. python manage.py runserver
+4. Open a browser tab and type in: localhost:8000/stateselect/
+  ```
+
 ### Future data 
 
 - Region that every state belongs to
-- Icon support for every state and industry
+- Yearly and quaterly data
+- Icon showing every state and main industry
 
-#### Long term update goal for app:
+## Long term update goal for app:
 
 Have open data available for every:
 
 - City
-- State
 - Nation
 - Continent
