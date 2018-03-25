@@ -199,12 +199,11 @@ i {
 }
 #GDP {
     font-family: 'Lato', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
 }
-
-
-
-
+body {
+    background-color: #EFEFEF;
+}
 
 /* ==========================================================================
    Media Queries
