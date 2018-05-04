@@ -1,4 +1,4 @@
-# GDPdig - For a digitally connected financial world(Ver 1.4.0)
+# GDPdig - Ver 1.3.1
 
 Django application showing a summary of the financial information on a chosen territory inside North America. 
 
@@ -9,25 +9,17 @@ Django application showing a summary of the financial information on a chosen te
 
 ## Why was this app made? 
 
-This app is made with the intention of delivering quick, financial data to anyone who needs it. 
+This app is made with the goal of giving quick, financial data to anyone who needs it. 
 
-## Local Installation: 
-
-  ```
-1. Git clone https://github.com/Toughee/SpigotDig.git
-2. Change directory to "localhost" project folder
-3. run "python manage.py runserver"
-4. Open a browser tab and type in: localhost:8000/stateselect/
-  ```
-
-### Tools used:
+### Tools used
 
 * Django
 * Javascript
+* HTML5
 * Initialzer
-* Font awesome
+* Font awesome icons
 
-### Sources:
+### Sources
 
   ```
 [Bureau of Labor Statistics](https://www.bls.gov/)
@@ -40,7 +32,17 @@ This app is made with the intention of delivering quick, financial data to anyon
 - [ ] Finish debugging the web app
 - [ ] Set up the Heroku environment
 
-### Future data:
+
+## Installation 
+
+  ```
+1. Git clone https://github.com/Toughee/SpigotDig.git
+2. Change directory to project folder
+3. python manage.py runserver
+4. Open a browser tab and type in: localhost:8000/stateselect/
+  ```
+
+### Future data 
 
 - Region that every state belongs to
 - Yearly and quaterly data
