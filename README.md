@@ -14,7 +14,7 @@ This app is made with the goal of giving quick, financial data to anyone who nee
 ### Tools used
 
 * Django
-* Javascript
+* JavaScript
 * HTML5
 * Initialzer
 * Font awesome icons
