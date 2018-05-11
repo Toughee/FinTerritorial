@@ -2,9 +2,6 @@ function showData() {
 	var theSelect = Spigot.Dig;
     var GDP = document.getElementById('GDP');
 
-    GDP.innerHTML = ('You have chosen ' + theSelect[theSelect.selectedIndex].text + '.' + "<br />"   
-    + "<br />" + ' Its G.D.P is valued in $' + 
-    theSelect[theSelect.selectedIndex].value + ' billion.' + "<br />" 
-    + "<br />" + ' Its main industry is the ' + 
-    theSelect[theSelect.selectedIndex].id) + ' industry.';
+    GDP.innerHTML = ('Yearly G.D.P value: $' + theSelect[theSelect.selectedIndex].value + ' billion.' + "<br />" 
+    + "<br />" + ' Main industry: ' + theSelect[theSelect.selectedIndex].id) + ' industry.';
 }
