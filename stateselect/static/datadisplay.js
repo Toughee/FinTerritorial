@@ -1,5 +1,5 @@
 function showData() {
-	var theSelect = Spigot.Dig;
+	var theSelect = states.Dig;
     var GDP = document.getElementById('GDP');
 
     GDP.innerHTML = ('Yearly G.D.P value: $' + theSelect[theSelect.selectedIndex].value + ' billion.' + "<br />" 
