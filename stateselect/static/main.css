@@ -163,12 +163,16 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+h2 {
+    text-align: center;
+}
+
 h3 {
     
     font-family: 'Orbitron', sans-serif;
 }
 
-.mainer {
+#desc {
     font-family: 'Ultra', serif;
     font-size: extra-large;
 }

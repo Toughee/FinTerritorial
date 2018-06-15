@@ -59,7 +59,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 ##########################################################################################
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.SpigotDig.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.gpdig.com']
 
 ADMINS  = [( 'T.Jim', 'Marotjimenez@gmail.com')]
 
@@ -133,11 +133,11 @@ WSGI_APPLICATION = 'SpigotDig.wsgi.application'
 
 ##########################################################################################
 
-#DEFAULT_REDIRECT_URL = 'http://www.spigotdig.com:8000'
+#DEFAULT_REDIRECT_URL = 'http://www.gdpdig.com:8000'
 
 ##########################################################################################
 
-#PARENT_HOST = "spigotdig.com:8000"
+#PARENT_HOST = "gdpdig.com:8000"
 
 ##########################################################################################
 
@@ -232,3 +232,5 @@ STATICFILES_FINDERS = (
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
+
+##########################################################################################
