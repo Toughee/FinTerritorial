@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 with open('etc/secret_key.txt') as f:
     SECRET_KEY = f.read().strip() 
 
-DEBUG = True
+DEBUG = False
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 
