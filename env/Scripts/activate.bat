@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\Users\Marco\gitstockpile\prjct_finale\veta\SpigotDig\env"
+set "VIRTUAL_ENV=C:\Users\Marco\gitstockpile\Current-fin-2018\Pyapp\Dvo\gdpdig\env"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

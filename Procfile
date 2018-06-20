@@ -1,1 +1,1 @@
-web: gunicorn spigotdig.wsgi --log-file -
+web: gunicorn gdpdig.wsgi:application --log-file -
