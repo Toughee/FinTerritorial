@@ -30,9 +30,9 @@ This app is made with the goal of giving quick, financial data to anyone who nee
 - [ ] Finish debugging the web app
 - [ ] Setting up live environment
 
-## Installation: 
+## Using app locally
 
-(Note: you need to have Django installed in your computer for the app to work)
+(Please have the following software installed: Python, pip, Django)
 
   ```
 1. Git clone https://github.com/Toughee/GDPdig.git
